@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 function Navbar() {
   const linkNav = [
-    { name: "À Propos", href: "#" },
-    { name: "Services", href: "#" },
-    { name: "Projets", href: "#" },
+    { name: "À Propos", href: "#about" },
+    { name: "Services", href: "#service" },
+    { name: "Projets", href: "#project" },
     { name: "Contact", href: "#" },
   ];
 
