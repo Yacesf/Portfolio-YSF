@@ -1,6 +1,7 @@
 import ProjectCard from "../components/projectCard";
 import { projectData } from "../components/projectData";
 import { useState } from "react";
+import Modal from "../components/modal.jsx";
 
 function Project() {
   const [openModalId, setOpenModalId] = useState(null);
@@ -24,9 +25,9 @@ function Project() {
           <b>Certain de mes projets</b>
         </span>
       </div>
-      <div className="flex justify-evenly my-20 px-10">
+      <div className="flex justify-evenly mt-20 mb-40 px-10">
         {projectData.map((projet) => (
-          <ProjectCard 
+          <ProjectCard
             key={projet.id}
             title={projet.title}
             span={projet.span}
@@ -37,6 +38,11 @@ function Project() {
           />
         ))}
       </div>
+      <Modal
+        isOpen={openModalId !== null}
+        onClose={closeModal}
+        {...projectData.find((projet) => projet.modalId === openModalId)}
+      />
     </section>
   );
 }
