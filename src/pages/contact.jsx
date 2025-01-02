@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Contact() {
   return (
-    <section className="mt-40 py-32 bg-creme rounded-t-[120px] relative">
+    <section id="contact" className="mt-40 py-32 bg-creme rounded-t-[120px] relative">
       <div className="text-center pt-14">
         <h2 className="font-medium text-xl text-vert leading-9 tracking-wide mb-5">
           CONTACT

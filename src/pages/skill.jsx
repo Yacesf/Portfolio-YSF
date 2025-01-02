@@ -17,11 +17,11 @@ function Skill() {
   ];
 
   return (
-    <div className="mt-40 h-36 overflow-hidden rounded-b-[80px] flex bg-vert justify-center">
+    <div className="mt-32 lg:mt-40 h-24 lg:h-36 overflow-hidden rounded-b-[80px] flex bg-vert justify-center">
     <div className=" flex items-center gap-10 animate-marquee w-max-none">
       {skillLogo.map((skill) => (
         <img
-          className="h-20 invert brightness-0 "
+          className="h-14 lg:h-20 invert brightness-0 "
           alt={`Logo de ${skill.name}`}
           src={skill.src}
           key={skill.name}
@@ -29,7 +29,7 @@ function Skill() {
       ))}
       {skillLogo.map((skill) => (
           <img
-            className="h-20 invert brightness-0"
+            className="h-14 lg:h-20 invert brightness-0"
             alt={`Logo de ${skill.name}`}
             src={skill.src}
             key={`${skill.name}-duplicate`}
@@ -37,7 +37,7 @@ function Skill() {
         ))}
         {skillLogo.map((skill) => (
           <img
-            className="h-20 invert brightness-0"
+            className="h-14 lg:h-20 invert brightness-0"
             alt={`Logo de ${skill.name}`}
             src={skill.src}
             key={`${skill.name}-duplicate-2`}
@@ -45,7 +45,7 @@ function Skill() {
         ))}
         {skillLogo.map((skill) => (
           <img
-            className="h-20 invert brightness-0"
+            className="h-14 lg:h-20 invert brightness-0"
             alt={`Logo de ${skill.name}`}
             src={skill.src}
             key={`${skill.name}-duplicate-3`}

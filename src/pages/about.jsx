@@ -15,7 +15,7 @@ function About() {
           <br />
           <b>pour aller plus loin</b>
         </span>
-        <div className="w-[400px] mt-7 text-xl">
+        <div className="sm:w-[400px] mt-7 text-xl">
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.

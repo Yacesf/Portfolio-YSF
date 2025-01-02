@@ -34,7 +34,7 @@ function Service() {
         top="10%"
         left="20%"
       />
-      <div className="flex items-center justify-evenly">
+      <div className="flex flex-col sm:flex-row items-center justify-evenly">
         <ServiceCard
           icon=<img
             className="h-14 w-14"
