@@ -17,7 +17,7 @@ function Skill() {
   ];
 
   return (
-    <div className="mt-32 lg:mt-40 h-24 lg:h-36 overflow-hidden rounded-b-[80px] flex bg-vert justify-center">
+    <div className="mt-32 xs:mt-16 lg:mt-40 h-24 lg:h-36 overflow-hidden rounded-b-[80px] flex bg-vert justify-center">
     <div className=" flex items-center gap-10 animate-marquee w-max-none">
       {skillLogo.map((skill) => (
         <img
