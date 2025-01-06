@@ -2,9 +2,9 @@ import {motion} from "framer-motion";
 
 function ProjectCard({ title, span, src, alt, openModal }) {
   return (
-    <motion.div onClick={openModal} whileHover={{scale: 1.1}} className="bg-vert h-80 w-96 rounded-[20px] text-creme py-4 flex flex-col items-center hover:cursor-pointer">
+    <motion.div onClick={openModal} whileHover={{scale: 1.1}} className="bg-vert xs:h-56 xs:w-full w-80 h-60 xl:h-80 xl:w-96 rounded-[20px] text-creme py-4 flex flex-col items-center hover:cursor-pointer">
       <div className="text-center">
-        <h3 className="text-lg font-bold leading-3 uppercase">{title}</h3>
+        <h3 className=" text-sm lg:text-lg font-bold leading-4 uppercase">{title}</h3>
         <span className="text-sm">{span}</span>
       </div>
       
