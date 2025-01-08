@@ -1,7 +1,7 @@
-import ReactLogo from "../assets/Logo-de-competence/Logo-React.png";
+import ReactLogo from "../assets/Logo-de-competence/logo-react.png"
 import TailwindCSSLogo from "../assets/Logo-de-competence/tailwind.svg"
-import SASSLogo from "../assets/Logo-de-competence/Logo-Sass.png"
-import ReduxLogo from "../assets/Logo-de-competence/Logo-redux.png"
+import SASSLogo from "../assets/Logo-de-competence/logo-sass.png"
+import ReduxLogo from "../assets/Logo-de-competence/logo-redux.png"
 import NextJsLogo from "../assets/Logo-de-competence/nextjs-removebg-preview.png"
 import ViteLogo from "../assets/Logo-de-competence/vitejs2-removebg-preview.png"
 
