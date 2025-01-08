@@ -1,9 +1,9 @@
-import ReactLogo from "../assets/Logo-de-competence/logo-react.png"
-import TailwindCSSLogo from "../assets/Logo-de-competence/tailwind.svg"
-import SASSLogo from "../assets/Logo-de-competence/logo-sass.png"
-import ReduxLogo from "../assets/Logo-de-competence/logo-redux.png"
-import NextJsLogo from "../assets/Logo-de-competence/nextjs-removebg-preview.png"
-import ViteLogo from "../assets/Logo-de-competence/vitejs2-removebg-preview.png"
+import ReactLogo from "../assets/logo/logo-react.png"
+import TailwindCSSLogo from "../assets/logo/tailwind.svg"
+import SASSLogo from "../assets/logo/logo-sass.png"
+import ReduxLogo from "../assets/logo/logo-redux.png"
+import NextJsLogo from "../assets/logo/nextjs-removebg-preview.png"
+import ViteLogo from "../assets/logo/vitejs2-removebg-preview.png"
 
 
 function Skill() {
