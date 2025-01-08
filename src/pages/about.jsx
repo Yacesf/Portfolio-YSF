@@ -10,7 +10,7 @@ function About() {
         <div className=" p-5 xs:h-[150px] h-[500px] w-[250px] lg:w-[400px] bg-creme flex justify-center items-center">
           BIG PHOTO DE MOI
         </div>
-        <div className="xs:flex xs:flex-col items-center p-5 w-[500px]">
+        <div className="xs:flex xs:flex-col items-center p-5 xs:w-auto lg:w-[700px] w-[500px]">
           <h2 className="font-medium text-lg lg:text-xl text-vert leading-9 tracking-wide mb-5">
             À PROPOS DE MOI
           </h2>
