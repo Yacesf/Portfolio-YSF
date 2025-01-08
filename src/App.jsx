@@ -1,11 +1,11 @@
-import About from "./pages/about.Jsx";
-import Contact from "./pages/contact";
-import Footer from "./pages/footer";
-import Header from "./pages/header";
-import Home from "./pages/home";
-import Project from "./pages/project";
-import Service from "./pages/service";
-import Skill from "./pages/skill";
+import About from "./pages/about.jsx";
+import Contact from "./pages/contact.jsx";
+import Footer from "./pages/footer.jsx";
+import Header from "./pages/header.jsx";
+import Home from "./pages/home.jsx";
+import Project from "./pages/project.jsx";
+import Service from "./pages/service.jsx";
+import Skill from "./pages/skill.jsx";
 
 function App() {
   return (
