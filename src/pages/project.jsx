@@ -25,7 +25,7 @@ function Project() {
           <b>Certain de mes projets</b>
         </span>
       </div>
-      <div className="flex xs:flex-col xs:gap-5 justify-evenly gap-8 mt-10 sm:mt-20 mb-40 px-7">
+      <div className="flex xs:flex-col justify-evenly gap-8 mt-10 sm:mt-20 mb-40 px-7">
         {projectData.map((projet) => (
           <ProjectCard
             key={projet.id}

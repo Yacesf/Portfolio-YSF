@@ -11,7 +11,7 @@ function Home() {
         </p>
         
         <div className="flex flex-col items-center">
-          <h2 className="text-3xl sm:text-5xl lg:text-7xl font-semibold">
+          <h2 className="text-4xl sm:text-5xl lg:text-7xl font-semibold">
             Yacine Safsafi
           </h2>
           <img
@@ -19,7 +19,7 @@ function Home() {
             src={Ligne}
             alt="Trait"
           />
-          <span className="text-base sm:text-lg lg:text-xl mb-4 lg:mb-6">
+          <span className="text-base sm:text-lg lg:text-xl mb-6">
             Développeur front-end
           </span>
           <a href="#contact">

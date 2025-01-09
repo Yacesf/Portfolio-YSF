@@ -17,11 +17,11 @@ function ServiceCard({ icon, title, explainText }) {
         bgColor={isHovered ? "bg-white" : "bg-vert"}
         opacity="opacity-10"
         left="left-[35%] lg:left-[38%]"
-        top="lg:top-[15%] xl:top-[17%]"
+        top="xs:top-[9%] lg:top-[15%] xl:top-[17%]"
       />
       <div className="flex flex-col justify-center items-center">
         <div
-           className={`lg:mt-8 xl:mt-16 ${isHovered ? "invert brightness-0" : ""}`}
+           className={`xs:mt-5 lg:mt-8 xl:mt-16 ${isHovered ? "invert brightness-0" : ""}`}
         >
           {icon}
         </div>

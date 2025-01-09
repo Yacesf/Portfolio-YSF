@@ -38,13 +38,13 @@ function About() {
         size="h-10 w-10 lg:h-16 lg:w-16"
         bgColor="bg-vert"
         opacity="opacity-30"
-        left="left-[90%]"
+        left="xs:left-[85%] left-[90%]"
         top="top-0"
       />
       <Circle
         size="h-7 w-7 lg:h-12 lg:w-12"
         border="border-2 lg:border-4 border-black"
-        left="left-[89%]"
+        left="xs:left-[84%] left-[89%]"
         top="top-[3%]"
       />
     </section>

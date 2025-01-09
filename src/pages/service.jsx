@@ -17,7 +17,9 @@ function Service() {
         <span className="xs:text-xl lg:text-4xl text-2xl font-poppins">
           <b>Les services offert</b>
         </span>
-        <p className="lg:text-xl mb-12 lg:mb-20 mt-5">Ces services sont Lorem....</p>
+        <p className="lg:text-xl mb-12 lg:mb-20 mt-5">
+          Ces services sont Lorem....
+        </p>
       </div>
       <Triangle
         borderLeft="border-l-[30px] lg:border-l-[40px] border-l-transparent"
@@ -59,7 +61,7 @@ function Service() {
             src={MaintnanceImg}
             alt="Icon de maintnance et optimisation"
           ></img>
-          title="Maintnance et optimisation" 
+          title="Maintnance et optimisation"
           explainText="Lorem Ipsum is simply dummy text of the printing and typesetting industry,  lorem Ipsum has been."
         />
       </div>
