@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="xs:p-6 p-8 lg:p-16 flex items-center justify-between text-gray-700">
+    <footer className="xs:p-6 p-8 lg:p-16 flex items-center bg-vert justify-between text-white">
       <p className="xs:text-sm">© 2025 Yacine SAFSAFI, Tous droits réservés.</p>
       <div className="flex gap-5 lg:gap-10">
         <a href="https://github.com/Yacesf">

@@ -1,8 +1,24 @@
-function Circle({ size, border, opacity, bgColor, top, left }) {
+import { motion } from "framer-motion";
+
+function Circle({ size, border, opacity, bgColor }) {
+  const circleVariants = {
+    animate: {
+      y: [0, -10, 10, 0],
+      x: [0, -5, 5, 0],
+      transition: {
+        duration: 6,
+        repeat: Infinity,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
-    <div
-      className={`absolute rounded-full ${top} ${left} ${size} ${border} ${bgColor} ${opacity}`}
-    ></div>
+    <motion.div
+      variants={circleVariants}
+      animate="animate"
+      className={`rounded-full ${size} ${border} ${bgColor} ${opacity}`}
+    ></motion.div>
   );
 }
 

@@ -3,6 +3,11 @@ import NCImg from "../assets/projet-image/nc-img.png";
 import PYSFImg from "../assets/projet-image/PYSF-img.png";
 import OMFImgModal from "../assets/projet-image/omf-modal1.png";
 import NCImgModal1 from "../assets/projet-image/nc-modal.png";
+import ReactLogo from "../assets/logo/logo-react.png";
+import HTMLLogo from "../assets/logo/html-5.png";
+import TailwindCSSLogo from "../assets/logo/tailwind.svg";
+import SASSLogo from "../assets/logo/logo-sass.png";
+import ViteLogo from "../assets/logo/vitejs2-removebg-preview.png";
 
 export const projectData = [
   {
@@ -14,8 +19,8 @@ export const projectData = [
     title: "Intégration d'une maquette",
     span: "d'un site de restauration en mobile first",
     aboutText:
-      "Ce projet consistait à intégrer une maquette mobile-first pour un site de restauration moderne et interactif.",
-    skills: [],
+      "Ce projet avait pour objectif d'animer et d'intégrer une maquette conçue selon l'approche mobile-first, visant à créer un site moderne et interactif pour un service de restauration. Le développement a été réalisé en utilisant HTML pour la structure et SASS.",
+    skills: [HTMLLogo, SASSLogo],
     github: "https://github.com/Yacesf/Projet-4-OMF",
     link: "https://yacesf.github.io/Projet-4-OMF/",
   },
@@ -42,7 +47,7 @@ export const projectData = [
     span: "de mon portfolio",
     aboutText:
       "Développement et déploiement d'un portfolio interactif pour présenter mes compétences et projets.",
-    skills: [],
+    skills: [ReactLogo, TailwindCSSLogo, ViteLogo],
     github: "",
     link: "",
   },

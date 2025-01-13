@@ -16,16 +16,16 @@ function Project() {
   };
 
   return (
-    <section id="project" className="xs:mt-16 mt-32 xl:mt-40">
+    <section id="project" className="xs:mt-16 sm:mt-24 mt-32 xl:mt-40">
       <div className="flex flex-col justify-center items-center">
         <h2 className="font-medium text-lg lg:text-xl text-vert leading-9 tracking-wide mb-5">
           PROJECT
         </h2>
-        <span className="xs:text-xl text-4xl font-poppins">
+        <span className="xs:text-xl text-2xl lg:text-4xl font-poppins">
           <b>Certain de mes projets</b>
         </span>
       </div>
-      <div className="flex xs:flex-col justify-evenly gap-8 mt-10 sm:mt-20 mb-40 px-7">
+      <div className="flex xs:flex-col justify-evenly gap-8 mt-10 sm:mt-20 px-7">
         {projectData.map((projet) => (
           <ProjectCard
             key={projet.id}

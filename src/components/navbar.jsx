@@ -15,6 +15,7 @@ function Navbar() {
 
   return (
     <nav className="relative">
+      {/* Navigation pour les écrans larges */}
       <ul className="hidden xs:hidden sm:flex sm:text-md lg:text-xl items-center sm:gap-8 lg:gap-16">
         {linkNav.map((link, index) => (
           <motion.li
@@ -27,43 +28,57 @@ function Navbar() {
           </motion.li>
         ))}
       </ul>
+
+      {/* Bouton burger pour les petits écrans */}
       <button
         onClick={toggleMenu}
-        className="sm:hidden flex flex-col gap-1.5 focus:outline-none"
+        className="sm:hidden flex flex-col gap-1.5 focus:outline-none z-50 relative"
       >
         <span className="w-6 h-0.5 bg-vert"></span>
         <span className="w-6 h-0.5 bg-vert"></span>
         <span className="w-6 h-0.5 bg-vert"></span>
       </button>
+
       {isOpen && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.3 }}
-          className="fixed inset-0 bg-gradient-to-br from-vert to-creme flex flex-col items-center pt-20 z-50"
-        >
-          <button
+        <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.5 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 bg-black z-40"
             onClick={toggleMenu}
-            className="absolute top-6 right-6 text-4xl font-bold text-vert focus:outline-none  transition-colors duration-300"
+          ></motion.div>
+
+          <motion.div
+            initial={{ x: "100%" }}
+            animate={{ x: "0%" }}
+            exit={{ x: "100%" }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            className="fixed top-0 right-0 w-[50%] h-full bg-gradient-to-br from-vert to-creme z-50 shadow-lg"
           >
-            &times;
-          </button>
-          <ul className="flex flex-col items-center gap-8">
-            {linkNav.map((link, index) => (
-              <motion.li
-                whileHover={{ scale: 1.1 }}
-                key={index}
-                className="relative group text-white transition-colors duration-300"
-                onClick={() => setIsOpen(false)}
-              >
-                <a href={link.href} className="text-2xl font-semibold">
-                  {link.name}
-                </a>
-              </motion.li>
-            ))}
-          </ul>
-        </motion.div>
+            <button
+              onClick={toggleMenu}
+              className="absolute top-6 right-6 text-4xl font-bold text-white focus:outline-none"
+            >
+              &times;
+            </button>
+            <ul className="flex flex-col items-center gap-8 mt-20">
+              {linkNav.map((link, index) => (
+                <motion.li
+                  whileHover={{ scale: 1.1 }}
+                  key={index}
+                  className="relative group text-white transition-colors duration-300"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <a href={link.href} className="text-lg font-semibold">
+                    {link.name}
+                  </a>
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
+        </>
       )}
     </nav>
   );
