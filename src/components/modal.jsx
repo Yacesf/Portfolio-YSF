@@ -50,7 +50,7 @@ function Modal({
               className="bg-white rounded-lg shadow-lg max-w-2xl w-full p-6 relative"
             >
               <button
-                className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl font-bold"
+                className="absolute top-4 right-4 text-2xl font-bold"
                 onClick={onClose}
                 aria-label="Close modal"
               >
@@ -68,7 +68,7 @@ function Modal({
                   />
                 )}
                 {aboutText && (
-                  <p className="text-gray-700 xs:text-sm text-base sm:w-1/2">
+                  <p className="xs:text-sm text-base sm:w-1/2">
                     {aboutText}
                   </p>
                 )}
@@ -91,7 +91,7 @@ function Modal({
                     rel="noopener noreferrer"
                     className="text-blue-500 hover:text-blue-700"
                   >
-                    Visit Link
+                    Lien du prototype
                   </a>
                 )}
               </div>

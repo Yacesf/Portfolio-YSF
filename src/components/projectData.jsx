@@ -33,7 +33,7 @@ export const projectData = [
     title: "Optimisation et SEO",
     span: "pour le portfolio d'une artiste",
     aboutText:
-      "Optimisation de la vitesse de chargement et amélioration du SEO pour le portfolio de l'artiste Nina Carducci.",
+      "Optimisation de la vitesse de chargement et amélioration du SEO grâce à un audit réalisé avec Lighthouse et WAVE, ainsi qu'à une vérification de la conformité aux normes W3C pour le portfolio de l'artiste Nina Carducci.",
     skills: [],
     github: "https://github.com/Yacesf/P9-Optimisation",
     link: "https://yacesf.github.io/P9-Optimisation/",
@@ -46,9 +46,9 @@ export const projectData = [
     title: "Création et déploiement",
     span: "de mon portfolio",
     aboutText:
-      "Développement et déploiement d'un portfolio interactif pour présenter mes compétences et projets.",
+      "Développement initié avec Vite et React, stylisé avec TailwindCSS et Framer Motion, et déployé sur Netlify dans un premier temps pour des tests. Ce portfolio interactif a été conçu pour présenter mes compétences et mes projets.",
     skills: [ReactLogo, TailwindCSSLogo, ViteLogo],
-    github: "",
+    github: "https://github.com/Yacesf/Portfolio-YSF",
     link: "",
   },
 ];

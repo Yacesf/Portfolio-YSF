@@ -1,4 +1,5 @@
 import Circle from "../components/circle";
+import Avatar from "../assets/avatar.png";
 import { motion } from "framer-motion";
 
 function About() {
@@ -8,8 +9,8 @@ function About() {
       className="relative sm:mt-24 xs:mt-16 mt-32 xs:p-4 p-8 lg:mt-40"
     >
       <div className="flex justify-around xs:flex-col-reverse items-center">
-        <div className=" p-5 xs:h-[150px] h-[500px] w-[250px] lg:w-[400px] bg-creme flex justify-center items-center">
-          BIG PHOTO DE MOI
+        <div className=" p-5 xs:h-[150px] h-[500px] w-[250px] lg:w-[400px] flex justify-center items-center">
+          <img src={Avatar} alt="mon avatar"></img>
         </div>
         <div className="xs:flex xs:flex-col items-center p-5 xs:w-auto lg:w-[700px] w-[500px]">
           <h2 className="font-medium text-lg lg:text-xl text-vert leading-9 tracking-wide mb-5">
