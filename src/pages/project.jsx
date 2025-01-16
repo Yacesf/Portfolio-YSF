@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { sectionVariants } from "../utils/motionVariants"; // Importation des variantes de section
+import { sectionVariants } from "../utils/motionVariants";
 import ProjectCard from "../components/projectCard";
 import { projectData } from "../components/projectData";
 import { useState } from "react";
@@ -36,21 +36,15 @@ function Project() {
 
       <div className="flex xs:flex-col justify-evenly gap-8 mt-10 sm:mt-20 px-7">
         {projectData.map((projet) => (
-          <motion.div
+          <ProjectCard
             key={projet.id}
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            <ProjectCard
-              title={projet.title}
-              span={projet.span}
-              src={projet.src}
-              alt={projet.alt}
-              modalId={projet.modalId}
-              openModal={() => openModal(projet.modalId)}
-            />
-          </motion.div>
+            title={projet.title}
+            span={projet.span}
+            src={projet.src}
+            alt={projet.alt}
+            modalId={projet.modalId}
+            openModal={() => openModal(projet.modalId)}
+          />
         ))}
       </div>
 

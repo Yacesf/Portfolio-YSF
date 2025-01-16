@@ -4,6 +4,9 @@ function ProjectCard({ title, span, src, alt, openModal }) {
   return (
     <motion.div
       onClick={openModal}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
       whileHover={{ scale: 1.1 }}
       className="xs:h-56 xs:w-full w-80 h-60 xl:h-80 xl:w-96 rounded-[20px] text-creme py-4 flex items-center justify-center hover:cursor-pointer relative overflow-hidden"
     >
