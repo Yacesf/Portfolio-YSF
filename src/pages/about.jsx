@@ -1,18 +1,30 @@
 import Circle from "../components/circle";
-import Avatar from "../assets/avatar.png";
+import Avatar from "../assets/avatar.webp";
 import { motion } from "framer-motion";
+import { sectionVariants } from "../utils/motionVariants";
 
 function About() {
   return (
-    <section
+    <motion.section
       id="about"
       className="relative sm:mt-24 xs:mt-16 mt-32 xs:p-4 p-8 lg:mt-40"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={sectionVariants}
     >
       <div className="flex justify-around xs:flex-col-reverse items-center">
-        <div className=" p-5 xs:h-[150px] h-[500px] w-[250px] lg:w-[400px] flex justify-center items-center">
+        <motion.div
+          className="p-5 xs:h-[150px] h-[500px] w-[250px] lg:w-[400px] flex justify-center items-center"
+          variants={sectionVariants}
+        >
           <img src={Avatar} alt="mon avatar"></img>
-        </div>
-        <div className="xs:flex xs:flex-col items-center p-5 xs:w-auto lg:w-[700px] w-[500px]">
+        </motion.div>
+
+        <motion.div
+          className="xs:flex xs:flex-col items-center p-5 xs:w-auto lg:w-[700px] w-[500px]"
+          variants={sectionVariants}
+        >
           <h2 className="font-medium text-lg lg:text-xl text-vert leading-9 tracking-wide mb-5">
             À PROPOS DE MOI
           </h2>
@@ -37,24 +49,36 @@ function About() {
               afin de dynamiser et animer vos projets de manière optimale.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
+
       <motion.div
         className="absolute top-0 xs:left-[85%] left-[90%]"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={sectionVariants}
       >
-      <Circle
-        size="h-10 w-10 lg:h-16 lg:w-16"
-        bgColor="bg-vert"
-        opacity="opacity-30"
-      />
+        <Circle
+          size="h-10 w-10 lg:h-16 lg:w-16"
+          bgColor="bg-vert"
+          opacity="opacity-30"
+        />
       </motion.div>
-      <motion.div className="absolute xs:left-[84%] left-[89%] top-[3%]">
-      <Circle
-        size="h-7 w-7 lg:h-12 lg:w-12"
-        border="border-2 lg:border-4 border-black"
-      />
+
+      <motion.div
+        className="absolute xs:left-[84%] left-[89%] top-[3%]"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={sectionVariants}
+      >
+        <Circle
+          size="h-7 w-7 lg:h-12 lg:w-12"
+          border="border-2 lg:border-4 border-black"
+        />
       </motion.div>
-    </section>
+    </motion.section>
   );
 }
 

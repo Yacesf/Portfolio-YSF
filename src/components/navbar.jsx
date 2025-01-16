@@ -15,7 +15,6 @@ function Navbar() {
 
   return (
     <nav className="relative">
-      {/* Navigation pour les écrans larges */}
       <ul className="hidden xs:hidden sm:flex sm:text-md lg:text-xl items-center sm:gap-8 lg:gap-16">
         {linkNav.map((link, index) => (
           <motion.li
@@ -28,8 +27,6 @@ function Navbar() {
           </motion.li>
         ))}
       </ul>
-
-      {/* Bouton burger pour les petits écrans */}
       <button
         onClick={toggleMenu}
         className="sm:hidden flex flex-col gap-1.5 focus:outline-none z-50 relative"

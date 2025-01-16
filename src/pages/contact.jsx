@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
+import { sectionVariants } from "../utils/motionVariants";
 
 function Contact() {
   return (
-    <section
-      id="contact"
-      className="xs:mt-16 sm:mt-24 mt-32 xl:mt-40 sm:py-16 py-24 bg-creme"
-    >
+    <motion.section
+    id="contact"
+    className="xs:mt-16 sm:mt-24 mt-32 xl:mt-40 sm:py-16 py-24 bg-creme"
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.2 }}
+    variants={sectionVariants}
+  >
       <div className="text-center">
         <h2 className="font-medium text-lg lg:text-xl text-vert leading-9 tracking-wide mb-5">
           CONTACT
@@ -89,7 +94,7 @@ function Contact() {
           </motion.a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

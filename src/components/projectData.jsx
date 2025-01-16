@@ -1,13 +1,13 @@
-import omfImg from "../assets/projet-image/OMF-img.png";
-import NCImg from "../assets/projet-image/nc-img.png";
-import PYSFImg from "../assets/projet-image/PYSF-img.png";
-import OMFImgModal from "../assets/projet-image/omf-modal1.png";
-import NCImgModal1 from "../assets/projet-image/nc-modal.png";
-import ReactLogo from "../assets/logo/logo-react.png";
-import HTMLLogo from "../assets/logo/html-5.png";
-import TailwindCSSLogo from "../assets/logo/tailwind.svg";
-import SASSLogo from "../assets/logo/logo-sass.png";
-import ViteLogo from "../assets/logo/vitejs2-removebg-preview.png";
+import omfImg from "../assets/projet-image/OMF-img.webp";
+import NCImg from "../assets/projet-image/nc-img.webp";
+import PYSFImg from "../assets/projet-image/PYSF-img.webp";
+import OMFImgModal from "../assets/projet-image/omf-modal1.webp";
+import NCImgModal1 from "../assets/projet-image/nc-modal.webp";
+import ReactLogo from "../assets/logo/logo-react.webp";
+import HTMLLogo from "../assets/logo/html-5.webp";
+import TailwindCSSLogo from "../assets/logo/tailwind.webp";
+import SASSLogo from "../assets/logo/logo-sass.webp";
+import ViteLogo from "../assets/logo/vitejs2-removebg-preview.webp";
 
 export const projectData = [
   {

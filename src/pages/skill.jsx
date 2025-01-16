@@ -1,9 +1,9 @@
-import ReactLogo from "../assets/logo/logo-react.png";
-import TailwindCSSLogo from "../assets/logo/tailwind.svg";
-import SASSLogo from "../assets/logo/logo-sass.png";
-import ReduxLogo from "../assets/logo/logo-redux.png";
-import NextJsLogo from "../assets/logo/nextjs-removebg-preview.png";
-import ViteLogo from "../assets/logo/vitejs2-removebg-preview.png";
+import ReactLogo from "../assets/logo/logo-react.webp";
+import TailwindCSSLogo from "../assets/logo/tailwind.webp";
+import SASSLogo from "../assets/logo/logo-sass.webp";
+import ReduxLogo from "../assets/logo/logo-redux.webp";
+import NextJsLogo from "../assets/logo/nextjs-removebg-preview.webp";
+import ViteLogo from "../assets/logo/vitejs2-removebg-preview.webp";
 
 function Skill() {
   const skillLogo = [
