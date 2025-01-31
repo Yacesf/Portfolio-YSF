@@ -20,12 +20,12 @@ function Home() {
         </motion.p>
 
         <div className="flex flex-col items-center">
-          <motion.h2
+          <motion.h1
             className="text-4xl sm:text-5xl lg:text-7xl font-semibold"
             variants={contentVariants}
           >
-            Yacine Safsafi
-          </motion.h2>
+             Yacine SF.
+          </motion.h1>
           <motion.img
             className="mb-4 w-40 sm:w-52 lg:w-auto"
             src={Ligne}

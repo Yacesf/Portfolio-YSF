@@ -10,14 +10,14 @@ function Header() {
       initial="hidden"
       animate="visible"
     >
-      <motion.h1
+      <motion.h2
         className="tracking-wide font-bold text-3xl sm:text-4xl text-vert"
         variants={headerVariants.title}
         initial="hidden"
         animate="visible"
       >
         Y.SF
-      </motion.h1>
+      </motion.h2>
       <Navbar />
     </motion.header>
   );
